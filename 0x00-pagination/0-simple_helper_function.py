@@ -1,12 +1,24 @@
 #!/usr/bin/env python3
-"""A file that contains a function that returns the first
- index and page size of data"""
-from type import Tuple
+"""
+Contains definition of index_range helper function
+"""
+from typing import Tuple
 
 
 def index_range(page: int, page_size: int) -> Tuple[int, int]:
-    """A function that returns the total data size and starting index 
-    for a particular page in a set of data"""
+    """
+    Takes 2 integer arguments and returns a tuple of size two
+    containing the start and end index corresponding to the range of
+    indexes to return in a list for those pagination parameters
+    Args:
+        page (int): page number to return (pages are 1-indexed)
+        page_size (int): number of items per page
+    Return:
+        tuple(start_index, end_index)
+    """
+    start, end = 0, 0
+    for i in range(page):
+        start = end
+        end += page_size
 
-    size = page_size * page_size
-    return (size - page_size, size)
+    return (start, end)
