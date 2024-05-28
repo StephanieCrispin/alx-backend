@@ -3,8 +3,17 @@
 # This file is distributed under the same license as the PROJECT project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
-msgid ""
-msgstr ""
+
+
+#: templates/3-index.html:7 templates/4-index.html:7 templates/5-index.html:7
+msgid "home_title"
+msgstr "Welcome to Holberton"
+
+#: templates/3-index.html:10 templates/4-index.html:10
+#: templates/5-index.html:10
+msgid "home_header"
+msgstr "Hello world!"
+
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2024-05-28 11:18+0000\n"
